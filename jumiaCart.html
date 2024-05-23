@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumia</title>
+    <script src="js/tailwind.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body class="bg-gray-200" >
+
+    <div class="">
+        <!-- --------nav bar-------- -->
+
+        <nav class="">
+            <div class="w-[100vw] h-[55px] bg-purple-400 hidden">
+                <img class="pl-[200px] w-[90vw] h-[55px]" src="/asset/nav-bar-img.gif" alt="nav-bar-img">
+            </div>
+
+            <div class="flex w-[100vw] pt-1 h-[35px] bg-gray-300">
+                <a class="flex hover:underline underline-orange-500 ml-[200px]" href="#"><img class="w-4 h-4 mt-1 bg-transparent" src="/asset/logo.png" alt="logo"><p class="ml-1 text-orange-500 font-[500] text-[15px]">Sell on jumia</p></a>
+
+               <div class=" flex ml-[400px] pt-3 animate-bounce ">
+                    <img class="w-10 h-3 mr-3 " src="/asset/jumia logo.png" alt="">
+                    
+                    <a href="#"><img class="w-10" src="/asset/jumiapay-img.png" alt=""></a>
+               </div>
+            </div>
+
+        </nav>
+          <div class=" sticky top-0 z-50 flex w-[100vw] h-[65px] bg-[whitesmoke] " >
+            <div class="flex pt-3 pl-[70px]" >
+                <img  class="w-5 h-6 pt-1 hover" src="/asset/menu.png" alt="" id="menu"  >
+                    
+                <img class="pb-16 w-[190px] h-[100px] pl-[40px]" src="/asset/jumia logo.png" alt="">
+            </div>
+
+            <div class="flex  mt-3 ml-[50px] w-[520px] border h-10 pl-3">
+                <img class="w-5 h-8 pt-3" src="/asset/search.png" alt="search">
+                <input class="w-[450px] h-[40px] pl-4 bg-transparent text-[15px] font-[500] border-none focus:outline-none tracking-[1px] leading-[2px]" type="search"  id="" placeholder="Search products,brands and categories" >
+            </div>
+
+            <button class="ml-4 w-[80px] h-[40px] mt-3 bg-orange-500 text-white font-[500] rounded-md hover:bg-orange-600">SEARCH</button>
+
+            <div class="flex">
+                <a class="flex hover:text-orange-500 transition duration-300ms mt-4 ml-3 hover:text-orange-500" href="#">
+                    <ion-icon class="text-2xl mt-1" name="person-outline"></ion-icon>
+                    <p class=" text-md font-[700] mt-2 ml-1">Account</p><ion-icon class="ml-2 mt-3" name="chevron-down-outline"></ion-icon>
+                </a>
+
+                <a class="hover:text-orange-500 transition duration-300 font-[700] flex mt-4 ml-4" href="#">
+                    <ion-icon class="text-2xl mt-2" name="help-circle-outline"></ion-icon>
+                    <p class=" mt-2 ml-1">Help</p><ion-icon class="ml-2 mt-3" name="chevron-down-outline"></ion-icon>
+                </a>
+
+                <a class="hover:text-orange-500 transition duration-300 font-[700] flex mt-4 ml-4" href="jumiaCart.html">
+                    <ion-icon class=" mt-2 text-2xl" name="cart-outline"></ion-icon>
+                    <p class=" mt-2 ml-2">Cart</p>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- --------nav bar ends ---------- -->
+        
+     <!-- cart starts -->
+     
+     <div class="flex justify-between gap-8   pt-[40px] h-[320px] w-[93%] bg-white mt-[20px] rounded-[5px] ml-[60px] " style="overflow: scroll;  ">
+        <a href=""><div class=" hover:shadow hover:shadow-gray-300    w-[150px] h-[235px] bg-white  ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4" >
+            
+            <img src="asset/1(36).jpg" class="w-[150px] h-[150px]  ">
+         <p class="ml-[20px] text-[13px] ">itel 200000mAh Mobile Po... <br>&#8358; <b>16,000 </b> <br><del>&#8358;10,500</del></p>
+        </div></a>
+
+        <a href=""><div class="hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/shirt.jpg" class="w-[150px] h-[150px] mt-4  "  >
+            <p class="ml-[20px] text-[13px]">100% cotton 4 pcs Men's... <br>&#8358; <b>12,283 </b> <br><del>&#8358;19,924</del></p>
+            
+        </div></a>
+       <a href=""> <div class=" hover:shadow hover:shadow-gray-300  w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/1(17).jpg" class="w-[150px] h-[150px] mt-4" >
+            <p class="ml-[20px] text-[13px]">Ace Elec 20000 MAh Ultra... <br>&#8358; <b>8,600 </b> <br><del>&#8358;12,000</del></p>
+        </div></a>
+       <a href=""> <div class=" hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/1(17).jpg" class="w-[150px] h-[150px]">
+            <p class="ml-[20px] text-[13px]">Ace Elec 20000 MAh Ultra... <br>&#8358; <b>8,600 </b> <br><del>&#8358;15,000</del></p>
+        </div></a>
+        <a href=""><div class=" hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/itel.jpg" class="w-[150px] h-[150px]">
+            <p class="ml-[10px] text-[13px]">Itel PowerLite 20000 mAh Ultra... <br>&#8358; <b>17,500 </b> <br><del>&#8358;32,000</del></p>
+        </div></a>
+        <a href=""><div class=" hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/shoe.jpg" class="w-[130px] h-[130px] pt-2 pl-4">
+            <p class="ml-[20px] text-[13px]">Men's Palm Sandals PU L... <br>&#8358; <b>12,772</b> <br><del>&#8358;15,270</del></p>
+        </div></a>
+        <a href=""><div class="hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/fan.jpg" class="w-[150px] h-[150px]">
+            <p class="ml-[20px] text-[13px]">Sun King Solar Fan with... <br>&#8358; <b>89,000</b> <br><del>&#8358;110,000</del></p>
+        </div></a>
+        <a href=""><div class=" hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/t.v.jpg" class="w-[150px] h-[150px]">
+            <p class="ml-[20px] text-[13px]">itel 32 Inches LED TV (A3... <br>&#8358; <b>78,599</b> <br><del>&#8358;116,773</del></p>
+        </div></a>
+        <a href=""><div class=" hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/PANT.jpg" class="w-[150px] h-[150px] pt-4">
+            <p class="ml-[20px] text-[13px]">Ladies Panties Set Of 6 In 1 ... <br>&#8358; <b>5,299</b> </p>
+        </div></a>
+        <a href=""><div class=" hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/ipod.jpg" class="w-[150px] h-[150px]">
+            <p class="ml-[20px] text-[13px]">Oraimo Freepods Lite40... <br>&#8358; <b>14,800</b><br><del>&#8358;30,000</del> </p>
+        </div></a>
+        <a href=""><div class="hover:shadow hover:shadow-gray-300 w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/Acne.jpg" class="w-[150px] h-[150px] ">
+            <p class="ml-[20px] text-[13px]">Cerave Acne Control Clea... <br>&#8358; <b>4,850</b><br><del>&#8358;25,000</del> </p>
+        </div></a>
+        <a href=""><div class="hover:shadow hover:shadow-gray-300  w-[150px] h-[235px] ease-in-out duration-300 hover:scale-110 cursor-pointer mt-4">
+            <img src="asset/wall Clock.jpg" class="w-[150px] h-[150px]">
+            <p class="ml-[20px] text-[13px]">DIY Wall Clocks 3D Mirrow... <br>&#8358; <b>3,226</b><br><del>&#8358;6,720</del> </p>
+        </div></a>
+     </div>
+
+     <p class="mt-[-310px] text-[20px] ml-[80px] font-[700]">Top selling items</p>
+     <a href=""><p class="text-orange-500 font-[700] ml-[1110px] mt-[-30px]">SEE ALL <ion-icon   name="chevron-forward-outline"></ion-icon></p></a>
+   <!-- 1st div for footer -->
+     <div class=" flex justify-evenly    pt-[30px] h-[240px] w-[100%]   mt-[310px]  " style="background-color: rgb(29, 24, 24);" >
+        <img class="pb-16 w-[190px] h-[100px] " src="/asset/jumia logo.png" alt="">
+            <div class="text-white">
+            <p class="text-[14px]">NEW TO JUMIA?</p>
+            <P class="text-[12px]">Subscribe to our newsletter to get updates on our latest offers!</P>
+            <input type="email" placeholder="Enter Email Address" class="mt-[20px] w-[246px] h-[50px] outline-orange-400 placeholder:pl-6 rounded-[5px] ">
+           </div>
+            <div class="text-white">
+                <p class="text-[14px]">DOWNLOAD JUMIA FREE APP</p>
+                <P class="text-[12px]">Get access to exclusive offers!</P>
+            </div>
+             </div>
+           <!-- 2nd div for footer  -->
+             <div class=" flex justify-evenly   pt-[40px] h-[100%] w-[100%] " style="background-color: rgb(71, 68, 68);" >
+                <div class="text-white">
+                    <p class="text-[14px]">NEED HELP?</p>
+                    <a href="" class="hover:underline"><P class="text-[13px] mt-4">Chat with us</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Help Center</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Contact Us</P></a>
+                    <p class=" text-[14px] mt-4">USEFUL LINKS</p>
+                    <a href="" class="hover:underline"><P class="text-[13px] mt-4">Service Center</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">How to shop on Jumia?</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Delivery options and time lines</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">How to return a product on Jumia?</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Corprate and bulk purchases</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Report a Product</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Dispute Resolution Policy</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Return and Refund Timeline</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Return Policy</P></a>
+                    <p class=" text-[14px] mt-4">JOIN US ON</p>
+                    <!-- div for facebook logo and others begins  -->
+                    <div class="flex">
+
+                    </div>
+                    <!-- div for facebook logo and others ends -->
+                    </div>
+                <div class="text-white">
+                    <p class="text-[14px]">ABOUT JUMIA</p>
+                    <a href="" class="hover:underline"><P class="text-[13px] mt-4">About Us</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Jumia Careers</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Jumia Express</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Terms and Conditions</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Privacy Notice</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Jumia Store Credit Terms & Conditions</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Jumia Payment Information Guidelines</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Cookies Notice</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Jumia Global</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Official Stores</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Flash Sales</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Tech Week 2024</P></a>
+                    <p class=" text-[14px] mt-16">PAYMENT METHODS AND DELIVERY PARTNERS</p>
+                    <!-- div for interswitch logo and others begins  -->
+                    <div class="flex">
+
+                    </div>
+                    <!-- div for interswitch logo and others ends -->
+
+                </div>
+                <div class="text-white">
+                    <p class="text-[14px]">MAKE MONEY WITH JUMIA</p>
+                    <a href="" class="hover:underline"><P class="text-[13px] mt-4">Sell on Jumia</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Vendor hub</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Become a Sales Consultant</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Become a Logistics Service Partner</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Join the Jumia DA Academy</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Join the Jumia KOL Program </P></a>
+                    <!-- div for DHL logo and others begins  -->
+                    <div class="flex">
+
+                    </div>
+                    <!-- div for DHL logo and others ends -->
+                </div>
+                <div class="text-white">
+                    <p class="text-[14px]">JUMIA INTERNATIONAL</p>
+                    <div class="flex justify-evenly ">
+                      <div class="ml-[-10px]">
+                    <a href="" class="hover:underline"><P class="text-[13px] mt-4">Algeria</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Egypt</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Ghana</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Ivory Coast</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Kenya</P></a>
+                    </div>
+                      <div class="pl-4">
+                        <a href="" class="hover:underline"><P class="text-[13px] mt-4">Morocco</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Senegal</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Tunisia</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Uganda</P></a>
+                    <a href="" class="hover:underline"><P class="text-[13px] ">Zando</P></a>
+
+                      </div>
+                    </div>
+
+                
+                </div>
+            </div>
+            <div style="display: none ; position: absolute;  " id="a" class=" w-[15%] h-[380px] bg-white rounded-[5PX] ml-[50px] shadow mt-[-1000px] pl-[50px] pt-[20px] text-[12px] "  >
+                <a href="Supermarket" ><p class="hover:text-orange-400">Supermarket</p></a>
+                <a href="Health & Beauty"><p class="hover:text-orange-400 mt-[10px]" >Health & Beauty</p></a>
+                <a href="Home & Offices"><p class="hover:text-orange-400 mt-[10px]">Home & Offices</p></a>
+                <a href="Appliances"><p class="hover:text-orange-400 mt-[10px]">Appliances</p></a>
+                <a href="Phones & Tablets"><p class="hover:text-orange-400 mt-[10px]">Phones & Tablets</p></a>
+                <a href="Computings" ><p class="hover:text-orange-400 mt-[10px]">Computings</p></a>
+                <a href="Electronics"><p class="hover:text-orange-400 mt-[10px]">Electronics</p></a>
+                <a href="Fashion"><p class="hover:text-orange-400 mt-[10px]">Fashion</p></a>
+                <a href="Beauty Products"><p class="hover:text-orange-400 mt-[10px]">Beauty Products</p></a>
+                <a href="Gaming"><p class="hover:text-orange-400 mt-[10px]">Gaming</p></a>
+                <a href="Sporting goods"><p class="hover:text-orange-400 mt-[10px]">Sporting goods</p></a>
+                <a href="Other Catergories"><p class="hover:text-orange-400 mt-[10px]">Other Catergories</p></a>
+
+            </div>
+
+            <script>
+                var menu= document.getElementById("menu");
+                menu.addEventListener("mouseover", function(){
+                 document.getElementById("a").style.display = "block";
+                 
+                })
+                var menu= document.getElementById("menu");
+                menu.addEventListener("mouseout", function(){
+                 document.getElementById("a").style.display = "none";
+                })
+               function menu(){
+                document.getElementById("a").style.display = "block";
+               }
+               
+                </script>
+            
+</body>
+</html>
