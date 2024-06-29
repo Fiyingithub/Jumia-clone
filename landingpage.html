@@ -44,6 +44,33 @@
         showSlide(currentIndex);
        });
 
+
+       function Acct(){
+         let subAcct = document.getElementById("subAcct");
+         let subHelp = document.getElementById("subHelp");
+
+         document.getElementById("subHelp").classList.add("hidden");
+
+         if (subAcct.classList.contains("hidden")) {
+            subAcct.classList.remove("hidden");
+         } else {
+             subAcct.classList.add("hidden");
+            }
+       }
+
+       function Help(){
+         let subHelp = document.getElementById("subHelp");
+         let subAcct = document.getElementById("subAcct");
+
+         document.getElementById("subAcct").classList.add("hidden");
+
+         if (subHelp.classList.contains("hidden")) {
+            subHelp.classList.remove("hidden");
+         } else {
+             subHelp.classList.add("hidden");
+            }
+       }
+
     </script>
 
 
@@ -97,15 +124,76 @@
             <button class="ml-4 w-[80px] h-[40px] mt-3 bg-orange-500 text-white font-[500] rounded-md hover:bg-orange-600">SEARCH</button>
 
             <div class="flex">
-                <a class="flex hover:text-orange-500 transition duration-300ms mt-4 ml-3 hover:text-orange-500" href="#">
-                    <ion-icon class="text-2xl mt-1" name="person-outline"></ion-icon>
-                    <p class=" text-md font-[700] mt-2 ml-1">Account</p><ion-icon class="ml-2 mt-3" name="chevron-down-outline"></ion-icon>
-                </a>
+                <div>
+                    <a class="flex hover:text-orange-500 transition duration-300ms mt-4 ml-3 hover:text-orange-500" href="#">
+                        <ion-icon class="text-2xl mt-1" name="person-outline"></ion-icon>
+                        <p onclick="Acct()" class=" text-md font-[700] mt-2 ml-1">Account</p><ion-icon class="ml-2 mt-3" name="chevron-down-outline"></ion-icon>
+    
+                    </a>
+                    <div class="hidden w-[200px] h-[210px] bg-white border-2 rounded-md shadow-md -ml-20 mt-4 pt-4" id="subAcct">
+                        <div>
+                            <button class="w-[80%] h-[40px] text-lg font-[500] text-white rounded-md bg-orange-500 ml-[10%]">SIGN IN</button>
+                        </div><hr class="mt-2">
+                        <div>
+                            <a class="flex gap-4 transition duration-300ms mt-4 hover:font-[500] ml-2" href="#">
+                                <ion-icon class="text-2xl mt-1" name="person-outline"></ion-icon>
+                                <p class=" text-md mt-2">My Account</p>
+                            </a>
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <ion-icon class="text-2xl mt-1" name="calendar-clear-outline"></ion-icon>
+                                <p class=" text-md mt-2">Orders</p>
+                            </a>
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <ion-icon class="text-2xl mt-1" name="heart-outline"></ion-icon>
+                                <p class=" text-md mt-2">Saved items</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
 
-                <a class="hover:text-orange-500 transition duration-300 font-[700] flex mt-4 ml-4" href="#">
-                    <ion-icon class="text-2xl mt-2" name="help-circle-outline"></ion-icon>
-                    <p class=" mt-2 ml-1">Help</p><ion-icon class="ml-2 mt-3" name="chevron-down-outline"></ion-icon>
-                </a>
+                <div>
+                    <a class="hover:text-orange-500 transition duration-300 font-[700] flex mt-4 ml-4" href="#" onclick="Help()">
+                        <ion-icon class="text-2xl mt-2" name="help-circle-outline"></ion-icon>
+                        <p class=" mt-2 ml-1">Help</p><ion-icon class="ml-2 mt-3" name="chevron-down-outline"></ion-icon>
+                    </a>
+
+                    <div class="hidden w-[210px] h-[350px] bg-white border-2 rounded-md shadow-md -ml-32 mt-4 pt-4" id="subHelp">
+                        <div class="ml-4">
+                            <a class="flex gap-4 transition duration-300ms hover:font-[500] ml-2" href="#">
+                                <p class=" text-md mt-2">Help Center</p>
+                            </a>
+
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <p class=" text-md mt-2">Place an order</p>
+                            </a>
+
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <p class=" text-md mt-2">Payment Option</p>
+                            </a>
+
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <p class=" text-md mt-2">Track an order</p>
+                            </a>
+                            
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <p class=" text-md mt-2">Cancel an order</p>
+                            </a>
+
+                            <a class="flex gap-4 transition duration-300ms mt-2 hover:font-[500] ml-2" href="#">
+                                <p class=" text-md mt-2">Returns & Refunds</p>
+                            </a>
+                        </div>
+
+                        <div class="flex justify-center items-center w-[80%] h-[40px] font-[500] mt-4 text-white rounded-md bg-orange-500 ml-[10%] cursor-pointer gap-2">
+                            <ion-icon class="text-2xl mt-2" name="chatbox-ellipses-outline"></ion-icon>
+                            <p>LIVE CHAT</p>
+                        </div>
+
+                        <a class="text-orange-500 float-right mr-1 mt-1 transition duration-300ms hover:font-[500] ml-2" href="#">
+                            <p class=" text-md mt-2">SEE ALL ></p>
+                        </a>
+                    </div>
+                </div>
 
                 <a class="hover:text-orange-500 transition duration-300 font-[700] flex mt-4 ml-4" href="jumiaCart.html">
                     <ion-icon class=" mt-2 text-2xl" name="cart-outline"></ion-icon>
